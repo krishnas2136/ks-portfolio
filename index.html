@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna S | Software Developer Portfolio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold" href="#home"><i class="bi bi-code-slash me-2"></i>Krishna S</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience & Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 animate-fade-in">
+                    <span class="badge bg-primary px-3 py-2 mb-3">B.Tech Computer Science & Engineering</span>
+                    <h1 class="display-3 fw-bold mb-3">Hi, I'm <span class="text-primary floating-text">Krishna S</span></h1>
+                    <p class="lead mb-4 fs-3 text-light">Software Developer & Cloud Explorer</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#projects" class="btn btn-primary btn-lg custom-btn"><i class="bi bi-folder-fill me-2"></i>View Projects</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg custom-btn"><i class="bi bi-envelope-fill me-2"></i>Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-4 section-heading">About Me</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-8">
+                    <p class="fs-5 text-secondary" id="about-text">
+                        <!-- Populated via script.js -->
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card p-4 shadow-sm border-0 bg-light rounded-4">
+                        <h5 class="fw-bold text-primary mb-3"><i class="bi bi-palette-fill me-2"></i>Creative & Co-Curricular</h5>
+                        <ul class="list-unstyled mb-0 text-secondary fs-6">
+                            <li class="mb-2"><i class="bi bi-music-note-beamed text-primary me-2"></i><strong>Singing:</strong> Vocal performances & Top Lyria Artist (Google Ambassador Program)</li>
+                            <li class="mb-2"><i class="bi bi-brush-fill text-primary me-2"></i><strong>Drawing & Arts:</strong> Digital & traditional creative design</li>
+                            <li class="mb-2"><i class="bi bi-person-video3 text-primary me-2"></i><strong>Acting & Skits:</strong> Creative performing arts & media storytelling</li>
+                            <li class="mb-0"><i class="bi bi-trophy-fill text-primary me-2"></i><strong>Hackathons:</strong> Participated in tech innovation challenges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-4 section-heading">Technical Skills & Expertise</h2>
+            <div class="row g-4" id="skills-container">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-4 section-heading">Featured Projects</h2>
+            <div class="row g-4" id="projects-container">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Certifications Section -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-4 section-heading">Experience & Professional Certifications</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h4 class="fw-bold mb-3 text-dark"><i class="bi bi-briefcase-fill text-primary me-2"></i>Work Experience</h4>
+                    <div id="experience-container"></div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="fw-bold mb-3 text-dark"><i class="bi bi-patch-check-fill text-primary me-2"></i>Certifications & Accomplishments</h4>
+                    <div id="certifications-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-4 section-heading">Education</h2>
+            <div class="row g-4" id="education-container">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-4 section-heading">Get In Touch</h2>
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                        <h5 class="fw-bold mb-3 text-dark">Contact Information</h5>
+                        <p id="contact-email" class="mb-3"><i class="bi bi-envelope-at-fill text-primary me-2"></i><strong>Email:</strong> krishnasujala180@gmail.com</p>
+                        <p id="contact-location" class="mb-4"><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>University:</strong> Indus University</p>
+                        <h6 class="fw-bold mb-3">Connect with me:</h6>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <a href="https://github.com/krishnas2136" target="_blank" id="github-link" class="btn btn-outline-dark btn-sm custom-btn"><i class="bi bi-github me-1"></i> GitHub</a>
+                            <a href="https://www.linkedin.com/in/krishna-s-016b45281" target="_blank" id="linkedin-link" class="btn btn-outline-primary btn-sm custom-btn"><i class="bi bi-linkedin me-1"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="p-4 bg-white rounded-4 shadow-sm">
+                        <form id="contact-form" action="https://formspree.io/f/xnpnkwkq" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-semibold">Your Name</label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">Your Email</label>
+                                <input type="email" name="_replyto" class="form-control" id="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-semibold">Message</label>
+                                <textarea name="message" class="form-control" id="message" rows="4" placeholder="How can I help you?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary custom-btn px-4">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center bg-dark text-light">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 <span id="footer-name">Krishna S</span>. Built with HTML5, Bootstrap 5, & JS.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <!-- Certificate Viewer Modal (Popup) -->
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold" id="certificateModalLabel">Certificate Viewer</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <img id="modalCertificateImg" src="" class="img-fluid rounded shadow-sm" alt="Certificate Preview">
+                </div>
+                <div class="modal-footer">
+                    <a id="modalDownloadBtn" href="" target="_blank" class="btn btn-primary custom-btn">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> Open Full View
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

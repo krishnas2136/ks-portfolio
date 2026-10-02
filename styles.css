@@ -1,0 +1,106 @@
+/* --- Global Variables & Styling --- */
+:root {
+    --primary-color: #0d6efd;
+    --dark-bg: #0f172a;
+    --card-bg: #1e293b;
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    color: #334155;
+    background-color: #ffffff;
+}
+
+/* --- Section Heading Indicator --- */
+.section-heading {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 50px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* --- Hero Section & CSS Keyframe Animations --- */
+.hero-section {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    min-height: 85vh;
+    padding: 100px 0 80px 0;
+}
+
+/* Floating animation for name banner */
+@keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating-text {
+    display: inline-block;
+    animation: floatAnimation 4s ease-in-out infinite;
+}
+
+/* Fade-in reveal animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* --- Skill Badges --- */
+.skill-badge {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4em 0.8em;
+    margin: 0.25rem;
+    background-color: #eef2ff;
+    color: #3730a3;
+    border: 1px solid #c7d2fe;
+    border-radius: 8px;
+    display: inline-block;
+    transition: transform var(--transition-speed) ease, background-color var(--transition-speed) ease;
+}
+
+.skill-badge:hover {
+    transform: scale(1.05);
+    background-color: #c7d2fe;
+}
+
+/* --- Interactive Card Hover & Elevate --- */
+.card {
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* --- Custom Button Animations --- */
+.custom-btn {
+    transition: all var(--transition-speed) ease;
+}
+
+.custom-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--dark-bg);
+}
